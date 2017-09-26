@@ -1,0 +1,18 @@
+<div >
+  <div class="container" >
+    <h1>{{unJuego.nombre}}</h1>
+
+<br>
+Ingresar
+<input type="text"  [(ngModel)]="unJuego.numeroIngresado">
+<button class="btn btn-info" [hidden]="unJuego.numeroSecreto==0" *ngIf="mostrarVerificar" (click)="Validar()">Verificar</button>
+
+
+<br>
+ <button class="btn btn-success"  (click)="Generar()">Generar</button>
+
+  <p [hidden]="!unJuego.gano">No Gano</p>
+  <p [hidden]="unJuego.gano">Gano</p>
+  </div>
+</div>
+

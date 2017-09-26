@@ -1,0 +1,19 @@
+<div >
+  <div class="container" >
+<h1>{{unJuego.nombre}}</h1>
+
+
+
+{{unJuego.numero1}}
+{{unJuego.operardorMostrar}}
+{{unJuego.numero2}}
+<br>
+Ingresar Resultado
+<input type="text"  [(ngModel)]="unJuego.resultadoParticipante">
+ <button class="btn btn-info" (click)="Validar()">Verificar</button>
+
+
+<br>
+ <button class="btn btn-danger"  (click)=" Generar()">Generar</button>
+   </div>
+</div>
